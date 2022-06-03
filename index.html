@@ -1015,22 +1015,22 @@
                 <div class="row">
                 	<div id="message" class="col-md-12 message"> <!-- Show Message --> </div>
                   
-                	<form method="post" action="rsvp.php" id="rsvpform">
+                	<form method="post" data-netlify="true" name="rsvp" id="rsvpform"> 
                 		<div class="col-md-6">
                         	<div id="fullname" class="form-group">
     							<label for="inputname">*NAME</label>
-    							<input type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name">
+    							<input type="text" class="form-control ajax-input" id="inputname" name="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name">
  							</div>
                             <div id="email" class="form-group">
     							<label for="inputemail">*EMAIL</label>
-    							<input type="email" class="form-control ajax-input" id="inputemail" placeholder="" data-required="Email Required" data-output-label="Output Email">
+    							<input type="email" class="form-control ajax-input" id="inputemail" name="inputname" placeholder="" data-required="Email Required" data-output-label="Output Email">
  							</div>
                         	<div id="events" class="form-group">
     							<label for="inputevents">*I WILL ATTEND TO</label>
-    							<select multiple id="inputevents" class="form-control ajax-input" data-required="Please Select Events" data-output-label="Output Events">
- 									<option>Wedding Day</option>
-  									<option>Ceremony Day</option>
-                                	<option>The Party</option>
+    							<select id="inputevents" name="inputname" class="form-control ajax-input" data-required="Please Select Events" data-output-label="Output Events">
+ 									<option>I Will Not Be Attending</option>
+  									<option>I Will Attend On My Own</option>
+                                	<option>I Will Attend With a Guest</option>
 								</select>
  							</div>
                     	</div>
