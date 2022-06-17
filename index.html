@@ -781,7 +781,7 @@
                 	<form method="post" data-netlify="true" name="rsvp" id="rsvpform"> 
                 		<div class="col-md-6">
                         	<div id="fullname" class="form-group">
-    							<label for="inputname">*NAME</label>
+    							<label for="inputname">*NAME(S)</label>
     							<input type="text" class="form-control ajax-input" id="inputname" name="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name">
  							</div>
                             <div id="email" class="form-group">
@@ -789,12 +789,15 @@
     							<input type="email" class="form-control ajax-input" id="inputemail" name="inputname" placeholder="" data-required="Email Required" data-output-label="Output Email">
  							</div>
                         	<div id="events" class="form-group">
-    							<label for="inputevents">*I WILL ATTEND TO</label>
+    							<label for="inputevents">*ACCEPT / DECLINE</label>
     							<select id="inputevents" name="inputevents" class="form-control ajax-input" data-required="Please Select Events" data-output-label="Output Events">
- 									<option>I Will Not Be Attending</option>
-  									<option>I Will Attend On My Own</option>
-                                	<option>I Will Attend With a Guest</option>
+ 									<option>Accept</option>
+  									<option>Decline</option
 								</select>
+ 							</div>
+                            <div id="events" class="form-group">
+    							<label for="inputmessage"> Entrée Preference - Please indicate for each attendee (ie. Megan - Vegetarian) </label>
+    							<textarea id="inputmessage" class="form-control ajax-input" rows="14" data-output-label="Output Message"></textarea>
  							</div>
                     	</div>
                     	<div class="col-md-6">
