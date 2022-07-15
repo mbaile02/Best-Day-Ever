@@ -802,8 +802,8 @@
                 <label for="inputattending">*Will you be attending?</label>
                 <select id="inputattending" name="inputattending" class="form-control ajax-input"
                   data-required="Please Select Attending" data-output-label="Output Attending">
-                  <option>Will attend</option>
-                  <option>Unable to attend</option>
+                  <option value="true">Will attend</option>
+                  <option value="false">Unable to attend</option>
                 </select>
               </div>
             </div>
@@ -824,21 +824,22 @@
                 <label for="inputguest">*Will you be attending with a guest? (Please refer to your invitation if you’ve been granted a plus one)</label>
                 <select id="inputguest" name="inputguest" class="form-control ajax-input"
                   data-required="Please Select Guest" data-output-label="Output Guest">
-                  <option>No</option>
-                  <option>Yes, I am bringing a plus one</option>
+                  <option value="false">No</option>
+                  <option value="true">Yes, I am bringing a plus one</option>
                 </select>
               </div>
+              
               <div id="guestfullname" class="form-group">
                 <label for="inputguestname">*Name</label>
                 <input type="text" class="form-control ajax-input" id="inputguestname" name="inputguestname" placeholder=""
                   data-required="Guest Name Required" data-output-label="Output Guest Name">
               </div>           
-              <div id="entree" class="form-group">
+              <div id="guestentree" class="form-group">
                 <label for="inputguestentree">"Entree Preference(Option A, Option B, Option C, Option D)</label>
                 <textarea id="inputguestentree" class="form-control ajax-input" rows="6"
                   data-output-label="Output guest entree"></textarea>
               </div>
-              <div class="form-group">
+              <div id="guestdietary" class="form-group">
                 <label for="inputguestdietary">Dietary Restrictions - Please indicate for each guest</label>
                 <textarea id="inputguestdietary" class="form-control ajax-input" rows="2"
                   data-output-label="Output guest dietary"></textarea>
