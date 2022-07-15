@@ -697,6 +697,9 @@ $(document).ready(function() {
 			}
 		}
 	});
-	
+	var guestselect = document.getElementById("inputguest");
+document.addEventListener("change", function(){
+	if(guestselect.value);
+};	
 });
 	 
