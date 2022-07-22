@@ -698,8 +698,10 @@ $(document).ready(function() {
 		}
 	});
 	var guestselect = document.getElementById("inputguest");
-document.addEventListener("change", function(){
-	if(guestselect.value);
-});	
+	var guestshowhide = document.getElementById("guestshowhide");
+	guestshowhide.style.display = "none";
+	document.addEventListener("change", function(){
+		if(guestselect.value);
+	});	
 });
 	 
