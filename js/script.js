@@ -701,6 +701,7 @@ $(document).ready(function() {
 	var guestshowhide = document.getElementById("guestshowhide");
 	guestshowhide.style.display = "none";
 	document.addEventListener("change", function(){
+		console.log("guest select value: " + guestselect.value);
 		if(guestselect.value){
 			guestshowhide.style.display = "block";
 			console.log("display set to true");
