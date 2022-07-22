@@ -702,7 +702,7 @@ $(document).ready(function() {
 	guestshowhide.style.display = "none";
 	document.addEventListener("change", function(){
 		console.log("guest select value: " + guestselect.value);
-		if(guestselect.value){
+		if(guestselect.value == "true"){
 			guestshowhide.style.display = "block";
 			console.log("display set to true");
 		} else {
