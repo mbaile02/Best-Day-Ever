@@ -702,7 +702,8 @@ $(document).ready(function() {
 	guestshowhide.style.display = "none";
 	document.addEventListener("change", function(){
 		if(guestselect.value){
-			guestshowhide.display = "block";
+			guestshowhide.style.display = "block";
+			console.log(guestshowhide.style.display);
 		};
 	});	
 });
