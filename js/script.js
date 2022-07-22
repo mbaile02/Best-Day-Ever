@@ -701,7 +701,9 @@ $(document).ready(function() {
 	var guestshowhide = document.getElementById("guestshowhide");
 	guestshowhide.style.display = "none";
 	document.addEventListener("change", function(){
-		if(guestselect.value);
+		if(guestselect.value){
+			guestshowhide.display = "block";
+		};
 	});	
 });
 	 
