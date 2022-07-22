@@ -703,7 +703,10 @@ $(document).ready(function() {
 	document.addEventListener("change", function(){
 		if(guestselect.value){
 			guestshowhide.style.display = "block";
-			console.log(guestshowhide.style.display);
+			console.log("display set to true");
+		} else {
+			guestshowhide.style.display = "none";
+			console.log("display set to none");
 		};
 	});	
 });
